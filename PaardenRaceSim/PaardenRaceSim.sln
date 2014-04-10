@@ -7,6 +7,10 @@ Project("{A19FEF8C-A65A-1FF7-F246-302318E578E9}") = "PaardenRaceSim", "Assembly-
 EndProject
 Project("{A19FEF8C-A65A-1FF7-F246-302318E578E9}") = "PaardenRaceSim", "Assembly-CSharp-Editor.csproj", "{D546ADD5-F777-A085-A3A8-AA460775B256}"
 EndProject
+Project("{A19FEF8C-A65A-1FF7-F246-302318E578E9}") = "PaardenRaceSim", "Assembly-UnityScript-firstpass.unityproj", "{4CB05185-E2E5-A18B-DF70-405CBE24815D}"
+EndProject
+Project("{A19FEF8C-A65A-1FF7-F246-302318E578E9}") = "PaardenRaceSim", "Assembly-UnityScript-Editor.unityproj", "{DCC991CF-0045-4D9B-08D2-7CB47639D378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +29,19 @@ Global
 		{D546ADD5-F777-A085-A3A8-AA460775B256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D546ADD5-F777-A085-A3A8-AA460775B256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D546ADD5-F777-A085-A3A8-AA460775B256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB05185-E2E5-A18B-DF70-405CBE24815D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB05185-E2E5-A18B-DF70-405CBE24815D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB05185-E2E5-A18B-DF70-405CBE24815D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB05185-E2E5-A18B-DF70-405CBE24815D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC991CF-0045-4D9B-08D2-7CB47639D378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC991CF-0045-4D9B-08D2-7CB47639D378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC991CF-0045-4D9B-08D2-7CB47639D378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC991CF-0045-4D9B-08D2-7CB47639D378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-							GlobalSection(MonoDevelopProperties) = preSolution
+										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

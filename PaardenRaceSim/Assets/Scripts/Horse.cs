@@ -21,18 +21,18 @@ public class Horse : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		Vector3 newForward = (transform.position - m_lastPos);
-		if(newForward != Vector3.zero)
-			transform.forward = Vector3.Lerp(transform.forward, newForward.normalized, .1f);
-		if((m_targetPos - transform.position).sqrMagnitude < 2f)
+		if((m_targetPos - transform.position).sqrMagnitude < 5f)
 		{
 			if(++m_indexPoint >= m_path.m_points.Length)
 				m_indexPoint = 0;
 			m_targetPos = m_path.m_points[m_indexPoint];
 		}
-		Vector3 dir = (m_targetPos - transform.position).normalized * m_speed * Time.deltaTime;
-		m_lastPos = transform.position;
-		rigidbody.MovePosition(transform.position + dir);
+		Vector3 dir = (m_targetPos - transform.position).normalized;
+		//m_lastPos = transform.position;
+		Vector3 newForward = (transform.position - m_lastPos);
+		if(newForward != Vector3.zero)
+			transform.forward = Vector3.Lerp(transform.forward, dir.normalized, Time.deltaTime * 10f);
+		rigidbody.MovePosition(transform.position + transform.forward * Time.deltaTime * m_speed);
 		//transform.Translate(dir, Space.World);
 	}
 
