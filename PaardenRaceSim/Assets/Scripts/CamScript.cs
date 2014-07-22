@@ -53,7 +53,7 @@ public class CamScript : MonoBehaviour
 		Vector3 camDir = averageHorsePos - Vector3.zero;
 		camDir = camDir.normalized * dist.magnitude;
 		Vector3 newPos = new Vector3((averageHorsePos + camDir).x, transform.position.y, (averageHorsePos + camDir).z);
-		transform.position = Vector3.Lerp(transform.position, newPos, Time.deltaTime);
+		transform.position = Vector3.Lerp(transform.position, newPos, Time.deltaTime * .1f);
 		transform.LookAt(averageHorsePos);
 	}
 }
