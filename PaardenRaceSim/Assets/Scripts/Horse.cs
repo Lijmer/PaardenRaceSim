@@ -153,7 +153,7 @@ public class Horse : MonoBehaviour
 
     if(m_lap >= 3)
       s_guiValueInput.StopRace();
-
+        
   }
 
   void OnGUI()
